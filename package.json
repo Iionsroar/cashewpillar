@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "author": "cashewpillar",
+  "license": "MIT",
   "dependencies": {
     "@types/node": "18.15.13",
     "@types/react": "18.0.38",
