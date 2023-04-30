@@ -28,7 +28,7 @@ export default function Activity() {
             camera.position.z = 5
     
             // Render the scene
-            function render() {
+            const render = () => {
                 requestAnimationFrame(render)
                 cube.rotation.x += 0.01
                 cube.rotation.y += 0.01
