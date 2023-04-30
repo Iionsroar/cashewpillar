@@ -84,7 +84,7 @@ export default function Home() {
             </span>
           </h2>
           <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            See what I'm doing here! (three.js)
+            See what I&apos;m doing here! (three.js)
           </p>
         </Link>
 
