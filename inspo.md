@@ -5,8 +5,9 @@
 - https://beta.nextjs.org/docs/styling/tailwind-css
 - [interactive webgl exp guide](https://vercel.com/blog/building-an-interactive-webgl-experience-in-next-js)
 - [figma yt](https://www.youtube.com/watch?v=AY0EfWjndQg)
-- [three.js](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene)
-- [tailwind](https://v2.tailwindcss.com/docs)
+- [three.js](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene) > transition to [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)!!
+- [tailwind v2 docs](https://v2.tailwindcss.com/docs)
+- [tailwind v3 docs](https://tailwindcss.com/docs/font-size)
 
 ### topics
 

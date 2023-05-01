@@ -20,7 +20,7 @@ export default function Activity() {
     
             // Add a cube to the scene
             const geometry = new THREE.BoxGeometry()
-            const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 })
+            const material = new THREE.MeshBasicMaterial({ color: 0x89CFF0 })
             const cube = new THREE.Mesh(geometry, material)
             scene.add(cube)
     
