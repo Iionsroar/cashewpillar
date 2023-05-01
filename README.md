@@ -7,10 +7,10 @@
 - 📫 cashewpillar@gmail.com 
 
 <details align="center">
-    <summary> ۞⚝✨🌀Astral Projection>🌀✨⚝۞ </summary>
-    <ul style="list-style-type:none;">
-        <li><strong>Web:</strong> NextJS, Svelte, React Three Fiber</li>
-    	<li><strong>Film:</strong> Blender</li>
-        <li><strong>Game:</strong> Blender</li>
-    </ul>
+    <summary> ۞⚝✨🌀Astral Projection>🌀✨⚝۞ </summary><br>
+    <div>
+        <strong>Web:</strong> NextJS, Svelte, React Three Fiber<br>
+    	<strong>Film:</strong> Blender<br>
+        <strong>Game:</strong> Blender
+    </div>
 </details>
