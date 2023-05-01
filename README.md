@@ -6,3 +6,11 @@
 - 📫 cashewpillar@gmail.com 
 - 🥴 daily self-reminder to go [svelte kit](https://kit.svelte.dev/) because fireship [said so](https://www.youtube.com/watch?v=rFP7rUYtOOg)
 
+<details align="center">
+    <summary> ۞⚝✨🌀Astral Projection>🌀✨⚝۞ </summary>
+    <ul>
+    	<li><strong>Film:</strong> Blender</li>
+        <li><strong>Game:</strong> Blender</li>
+        <li><strong>Web:</strong> NextJS, Svelte, React Three Fiber</li>
+    </ul>
+</details>
