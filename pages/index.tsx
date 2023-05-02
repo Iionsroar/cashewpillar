@@ -46,7 +46,6 @@ export default function Home() {
           <div className="relative w-10 h-10">
             <Canvas
               dpr={dpr}
-              onCreated={({ gl }) => { gl.physicallyCorrectLights = true }}
             >
               <ambientLight intensity={2} />
               <directionalLight intensity={4} position={[5, 5, 5]} />
