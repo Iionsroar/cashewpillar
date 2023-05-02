@@ -3,12 +3,18 @@ import Link from 'next/link'
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import { useState, useEffect } from 'react'
+import { Canvas } from '@react-three/fiber'
+import Box from '../components/Box'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
-  useEffect(() => { setDarkMode(localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) }, [])
+  const [dpr, setDpr] = useState(1)
+  useEffect(() => { 
+    setDpr(window.devicePixelRatio)
+    setDarkMode(localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) 
+  }, [])
   useEffect(() => {
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
@@ -32,13 +38,23 @@ export default function Home() {
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
       <Head>
-        <title>Cashewpillar</title>
+        <title>Louis</title>
       </Head>
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Toggle Between Light and Darkness: &nbsp;
-          <code className="font-mono font-bold"><a onClick={toggleDarkMode}>Hit me</a></code>
-        </p>
+        <div className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
+          <p className="flex items-center">Toggle Between Light and Darkness: &nbsp;</p>
+          <div className="relative w-10 h-10">
+            <Canvas
+              dpr={dpr}
+              onCreated={({ gl }) => { gl.physicallyCorrectLights = true }}
+            >
+              <ambientLight intensity={2} />
+              <directionalLight intensity={4} position={[5, 5, 5]} />
+              <pointLight position={[10, 10, 10]} />
+              <Box scale={[1.8, 1.8, 1.8]} position={[0, 0, 0]} onClick={toggleDarkMode} />
+            </Canvas>
+          </div>
+        </div>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
@@ -47,15 +63,7 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             By{' '}
-            <p className="text-lg font-bold">Cashewpillar</p>
-            {/* <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            /> */}
+            <p className="text-lg font-bold">Louis</p>
           </a>
         </div>
       </div>
