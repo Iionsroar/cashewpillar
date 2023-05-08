@@ -40,15 +40,17 @@ export default function Home() {
       <Head>
         <title>Louis</title>
       </Head>
+      
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <div className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           <p className="flex items-center">Toggle Between Light and Darkness: &nbsp;</p>
           <div className="relative w-10 h-10">
             <Canvas
               dpr={dpr}
+              // onCreated={({ gl }) => { gl.physicallyCorrectLights = true }}
             >
-              <ambientLight intensity={2} />
-              <directionalLight intensity={4} position={[5, 5, 5]} />
+              <ambientLight intensity={0.5} />
+              <directionalLight intensity={1} position={[5, 5, 5]} />
               <pointLight position={[10, 10, 10]} />
               <Box scale={[1.8, 1.8, 1.8]} position={[0, 0, 0]} onClick={toggleDarkMode} />
             </Canvas>
@@ -78,7 +80,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <div className="mt-12 lg:mt-0 mb-16 lg:mb-0 grid text-center lg:grid-cols-4 lg:text-left">
         <Link
           href="/activity"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
