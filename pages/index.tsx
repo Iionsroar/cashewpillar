@@ -8,30 +8,15 @@ import Box from '../components/Box'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
-  const [darkMode, setDarkMode] = useState(true);
+interface IndexProps {
+  toggleDarkMode: () => void;
+}
+
+export default function Home({ toggleDarkMode }: IndexProps) {
   const [dpr, setDpr] = useState(1)
   useEffect(() => { 
     setDpr(window.devicePixelRatio)
-    setDarkMode(localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) 
   }, [])
-  useEffect(() => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  }, [darkMode])
-  
-  const toggleDarkMode = () => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      localStorage.theme = 'light'
-      setDarkMode(false)
-    } else {
-      localStorage.theme = 'dark'
-      setDarkMode(true)
-    }
-  }
   
   return (
     <main
