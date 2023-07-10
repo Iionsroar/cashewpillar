@@ -1,8 +1,8 @@
 <h1 align="center">👻 Louis 👻</h1>
 
-- 🔭 Tinkering with my finances, health & work like no other 🧎🤸‍♀️🧎‍♂️  
-- 📄 FastAPI, Flask, Firebase, React, Next.JS (FFF RN for real)  
-- 🌱 Tell me about your fav films, narrative games, literature, or, whatever's on your mind! >> cashew#2236
+- 🔭 2023: Tinkering with my values like a main character sorta 🧎🤸‍♀️🧎‍♂️  
+- 📄 Python, Typescript, Next.js 13 fan
+- 🌱 Tell me about your fav films, narrative games, literature, or, whatever's on your mind! >> cashew#2236 | @cashewpillar
 - 📫 cashewpillar@gmail.com 
 
 <details align="center">
