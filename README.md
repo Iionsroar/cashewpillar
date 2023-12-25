@@ -1,8 +1,8 @@
 <h1 align="center">👻 Louis 👻</h1>
 
-- 🔭 2023: Tinkering with my values like a main character sorta 🧎🤸‍♀️🧎‍♂️  
-- 📄 Python, Typescript, Next.js 13 fan
-- 🌱 Tell me about your fav films, narrative games, literature, or, whatever's on your mind! >> cashew#2236 | @cashewpillar
+- 🔭 2024: Grass Touch 🧎🤸‍♀️🧎‍♂️  
+- 📄 December 26, 2023: I will be divisible!! 
+- 🌱 Tell me about your fav films, narrative games, literature, or, whatever's on your mind! >> @cashewpillar
 - 📫 cashewpillar@gmail.com 
 
 <details align="center">
