@@ -1,15 +1,13 @@
-<h1 align="center">👻 Louis 👻</h1>
+<h1 align="center">L 👻</h1>
 
-- 🔭 2024: Grass Touch 🧎🤸‍♀️🧎‍♂️  
-- 📄 December 26, 2023: I will be divisible!! 
-- 🌱 Tell me about your fav films, narrative games, literature, or, whatever's on your mind! >> @cashewpillar
+- 🔭 2024CD: 2nd brain 🧎🧠🧎‍♂️  
+- 📄 July 08, 2024: let things breathe
+- 🌱 [stories](https://letterboxd.com/cashewpillar/) 
 - 📫 cashewpillar@gmail.com 
 
-<details align="center">
-    <summary> ۞⚝✨🌀Astral Projection>🌀✨⚝۞ </summary><br>
+<details>
+    <summary align="center"> ۞⚝✨🌀Astral Projection>🌀✨⚝۞ </summary><br>
     <div>
-        <strong>Web:</strong> Next.JS, SvelteKit, React Three Fiber<br>
-    	<strong>Film:</strong> Blender<br>
-        <strong>Game:</strong> Blender
+        Phoenix, Ruby on Rails, Svelte Kit<br>
     </div>
 </details>
